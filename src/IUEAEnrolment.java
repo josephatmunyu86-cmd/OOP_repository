@@ -2,10 +2,10 @@ public class studentsenrollement{
     String coursename;
     int numberofstudents;
     static int totalStudents = 0;
-    IUEAEnrolment(String courseName,int numberOfStudents){
-        this.courseName= courseName;
-        this.numberOfStudents= numberOfStudents;
-        totalStudents=totalStudents+numberOfStudents;
+    studentsenrollement(String coursename,int numberofstudents){
+        this.coursename= coursename;
+        this.numberofstudents= numberofstudents;
+        totalStudents=totalStudents+numberofstudents;
     }
    public void displayCourseStatistics(double passed){
         double passPercentage= (passed * numberOfStudents) / 100.0;
